@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sum of Numbers in a Range</title>
+</head>
+<body>
+  <h1>Sum of Numbers in a Range</h1>
+
+  <script>
+    // Prompt the user for the starting number
+    var startNumber = parseInt(prompt("Enter the starting number:"));
+
+    // Prompt the user for the ending number
+    var endNumber = parseInt(prompt("Enter the ending number:"));
+
+    var sum = 0;
+
+    if (startNumber && endNumber && startNumber <= endNumber) {
+      for (var i = startNumber; i <= endNumber; i++) {
+        sum += i;
+      }
+
+      alert("The sum of all numbers in the range is: " + sum);
+    } else {
+      alert("Invalid input! Please enter valid numbers.");
+    }
+
+    // Refresh the page after displaying the result
+    window.location.reload();
+  </script>
+</body>
+</html>
